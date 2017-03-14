@@ -108,7 +108,15 @@ public abstract class LibBindingActivity<T extends ViewDataBinding> extends AppC
                 PermissionUtils.requestPermissions(this, requestCode, permission[i]);
             }
         }
-        PermissionUtils.requestPermissions(this, requestCode, (String[]) p.toArray());
+        int requireSize = p.size();//请求权限的数量
+        if (requireSize==0){
+            return;
+        }
+        String[] temp = new String[requireSize];
+        for (int i = 0; i < requireSize; i++) {
+            temp[i] = p.get(i);
+        }
+        PermissionUtils.requestPermissions(this, requestCode, temp);
     }
 
     /**
