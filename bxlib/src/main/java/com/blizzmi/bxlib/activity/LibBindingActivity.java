@@ -5,10 +5,10 @@ import android.databinding.ViewDataBinding;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 
 import com.blizzmi.bxlib.annotation.LayoutId;
 import com.blizzmi.bxlib.utils.PermissionUtils;
+import com.zhy.autolayout.AutoLayoutActivity;
 
 import java.util.ArrayList;
 
@@ -25,7 +25,7 @@ import java.util.ArrayList;
  * @author WangLizhi
  * @version 1.0
  */
-public abstract class LibBindingActivity<T extends ViewDataBinding> extends AppCompatActivity {
+public abstract class LibBindingActivity<T extends ViewDataBinding> extends AutoLayoutActivity {
 
     public T mBinding;
 

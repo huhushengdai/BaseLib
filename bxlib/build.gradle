@@ -31,4 +31,6 @@ dependencies {
     compile 'com.belerweb:pinyin4j:2.5.1'
     compile 'de.greenrobot:eventbus:2.4.0'
     compile 'com.squareup.picasso:picasso:2.3.2'
+    //zhy 自动适配框架
+    compile 'com.zhy:autolayout:1.4.5'
 }
